@@ -1,0 +1,121 @@
+.faq {
+  padding-top: 260px;
+  padding-left: 142px;
+  padding-right: 142px;
+  padding-bottom: 100px;
+  @media (max-width: 1280px) {
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+  @media (max-width: 1200px) {
+    padding-top: 100px;
+  }
+  @media (max-width: 450px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  h5 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 58px;
+    text-align: center;
+    color: #f8951d;
+    max-width: 519px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    @media (max-width: 1200px) {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 58px;
+      color: #f8951d;
+    }
+  }
+  .slick-track {
+    display: flex;
+    align-items: flex-end;
+  }
+  .slider {
+    padding-left: 20px;
+    padding-right: 20px;
+    & > div {
+      position: relative;
+      background: #160d01;
+      box-shadow: 4px 4px 20px rgba(64, 67, 150, 0.12);
+      border-radius: 14px;
+      padding: 32px 48px;
+      max-width: 360px;
+      margin: 0 auto;
+      overflow: hidden;
+      text-align: left;
+      @media (max-width: 550px) {
+        padding: 20px 20px;
+      }
+      h3 {
+        // font-family: 'Montserrat';
+        // font-style: normal;
+        // font-weight: 600;
+        // font-size: 15px;
+        // line-height: 21px;
+        // color: #f8951d;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #f8951d;
+      }
+      h4 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        color: rgba(255, 255, 255, 0.68);
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        text-align: left;
+      }
+      .bottomBar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80px;
+        height: 8px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 0px 4px 0px 4px;
+      }
+    }
+  }
+
+  .prevArrow {
+    cursor: pointer;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -50px;
+  }
+  .nextArrow {
+    cursor: pointer;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
+  }
+  @media (max-width: 450px) {
+    .prevArrow,
+    .nextArrow {
+      display: none;
+    }
+  }
+}
+.slick-center {
+  .bottomBar {
+    background: #f8951d !important;
+  }
+}

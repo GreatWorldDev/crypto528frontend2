@@ -1,0 +1,94 @@
+.nft-footer {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+  @media (max-width: 1400px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 192px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid #3e3e65;
+  @media (max-width: 1024px) {
+    margin-top: 100px;    
+  }
+  & > div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 940px) {
+      width: 50%;      
+    }
+    @media (max-width: 554px) {
+      width: 100%;      
+    }
+    h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 34px;
+      letter-spacing: 0.02em;
+      color: #e6e6e6;
+      margin-bottom: 42px;
+      text-align: left;
+      @media (max-width: 1024px) {
+        margin-bottom: 10px;    
+        font-size: 22px;
+      }
+    }
+    a {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #9797b4;
+      margin-bottom: 32px;
+      text-align: left;
+      @media (max-width: 1024px) {
+        margin-bottom: 15px;    
+        font-size: 16px;
+      }
+    }
+    h3 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 188%;
+      color: rgba(255, 255, 255, 0.68);
+      text-align: left;
+      margin-bottom: 34px;
+      width: 100%;
+    }
+    .contact {
+      display: flex;
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.nft-copyright {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: right;
+  color: #e6e6e6;
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+  @media (max-width: 1400px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

@@ -1,0 +1,140 @@
+.tokenomic {
+  padding-bottom: 60px;
+  h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 39px;
+    padding-left: 112px;
+    @media (max-width: 1200px) {
+      padding-left: 23px;      
+    }
+    @media (max-width: 1024px) {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+  }
+  h6 {
+    max-width: 783px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: left;
+    max-width: 783px;
+    margin-bottom: 120px;
+    margin-left: 112px;
+    color: #f8951d;
+    @media (max-width: 1200px) {
+      font-size: 12px;
+      margin-bottom: 55px;
+      margin-left: 23px;
+    }
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
+    .detail {
+      background: url(../../../assets/images/tokenomicBg.png) no-repeat;
+      background-size: contain;
+      max-width: 651px;
+      width: 100%;
+      height: 710px;
+      padding: 50px 100px;
+      margin: 0;
+      @media (max-width: 630px) {
+        background-size: 100% 100%;
+      }
+      @media (max-width: 500px) {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      @media (max-width: 430px) {
+        padding-left: 45px;
+        padding-right: 45px;
+      }
+      & > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px white solid;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        &.last {
+          border: none;
+        }
+        h2 {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 38px;
+          color: #ffffff;
+        }
+        h5 {
+          font-family: 'Nunito';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 26px;
+          letter-spacing: 0.494118px;
+          color: #ffffff;
+          &.header {
+            color: #f8951d;
+          }
+        }
+        p {
+          font-family: 'Nunito';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 26px;
+          text-align: right;
+          letter-spacing: 0.494118px;
+          color: #77838f;
+        }
+        @media (max-width: 430px) {
+          h5 {
+            font-size: 10px;
+          }
+          p {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    .reward {
+      display: flex;
+      justify-content: center;
+      img {
+        max-width: 767px;
+        width: 100%;
+      }
+    }
+  }
+  .underbase1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+}

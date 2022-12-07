@@ -1,0 +1,75 @@
+
+.uploadedImage {
+  min-height: 150px;
+  padding: 32px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  video,
+  img {
+    max-height: 500px;
+    // background: $color-header-text;
+    border-radius: 15px;
+  }
+}
+
+.forUpload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 30px;
+  height: 300px;
+  justify-content: center;
+  background: rgb(3 33 4 / 50%);
+  border-radius: 15px;
+  p {
+    text-align: center;
+    color: rgb(128, 128, 128);
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .btnChoose {
+    input[type='file'] {
+      display: none;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      width: 125px;
+      height: 36px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 19px;
+      letter-spacing: 0.02em;
+      color: #0066ff;
+      border-radius: 50px;
+    }
+  }
+}
+.btnRemove {
+  cursor: pointer;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  right: 15px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+  &:hover {
+    opacity: 0.7;
+  }
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+}

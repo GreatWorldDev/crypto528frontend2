@@ -1,0 +1,31 @@
+.dropdown-selected {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  white-space: nowrap;
+  color: #d1d4db;
+  background-color: #0C0707;
+  padding: 10px 24px;
+  border-radius: 25px;
+  flex-shrink: 0;
+}
+
+.dropdown-arrow {
+  width: 15px;
+  margin-left: 10px;
+}
+
+.dropdown-menu {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  white-space: nowrap;
+  background-color: #151004;
+  color: #d1d4db;
+  border-radius: 20px;
+  padding: 10px;
+}

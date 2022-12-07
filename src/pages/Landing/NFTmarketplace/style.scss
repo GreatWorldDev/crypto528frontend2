@@ -1,0 +1,241 @@
+.nftmarket {
+  background: linear-gradient(
+    202.32deg,
+    rgba(49, 36, 2, 0.42) 3.51%,
+    rgba(49, 36, 2, 0.23) 62.23%,
+    rgba(49, 36, 2, 0.42) 78.09%
+  );
+  .banner {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    // height: 800px;
+    margin: 0px auto;
+    margin-top: -132px;
+    width: 100%;
+    padding-left: 144px;
+    padding-right: 57px;
+    flex-wrap: wrap;
+    @media (max-width: 1200px) {
+      padding-left: 23px;      
+      padding-right: 23px;
+    }
+    @media (max-width: 1024px) {
+      padding-top: 130px;
+    }
+    & > div:first-child {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      @media (max-width: 1024px) {
+        width: 100%;
+        // justify-content: center;
+        // align-items: center;
+        font-size: 18px;
+      }
+      h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 92px;
+        color: #e6e6e6;
+        text-align: left;
+        margin-bottom: 16px;
+        span {
+          text-decoration-line: underline;
+          color: #e67a00;
+        }
+        @media (max-width: 1280px) {
+          font-size: 40px;
+          font-weight: 500;
+          max-width: 435px;
+        }
+        @media (max-width: 1024px) {
+          max-width: 100%;
+          font-size: 18px;
+          line-height: 18px;
+        }
+      }
+      p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #ffffff;
+        text-align: left;
+        @media (max-width: 1280px) {
+          font-size: 15px;
+          font-weight: 500;
+          max-width: 500px;
+        }
+      }
+      .btn-group {
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+        flex-wrap: wrap;
+        button:first-child {
+          margin-right: 31px;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+          color: #ffffff;
+          background: #e67a00;
+          border-radius: 8px;
+          padding: 20px 32px;
+          @media (max-width: 1280px) {
+            font-size: 12px;
+            padding: 10px 10px;
+            border-radius: 40px;
+            margin-right: 5px;
+          }
+        }
+        button:last-child {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          color: #E67A00;
+          background-color: white;
+          border: none;
+          padding: 20px 32px;
+          border-radius: 8px;
+          @media (max-width: 1280px) {
+            font-size: 12px;
+            padding: 10px 10px;
+            border-radius: 40px;
+          }
+          @media (max-width: 384px) {
+            margin-top: 5px;
+          }
+        }
+      }
+      .satistics {
+        display: flex;
+        align-items: center;
+        margin-top: 48px;
+        @media (max-width: 1280px) {
+          margin-top: 30px;
+        }
+        @media (max-width: 1024px) {
+          justify-content: space-around;
+        }
+        @media (max-width: 596px) {
+          display: none;
+        }
+        & > div {
+          margin-right: 50px;
+          @media (max-width: 1024px) {
+            margin: 0 15px;
+          }
+          h2 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 39px;
+            color: #e67a00;
+            text-align: left;
+          }
+          p {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #9797b4;
+            white-space: nowrap;
+            text-align: left;
+          }
+          @media (max-width: 1280px) {
+            h2 {
+              font-size: 20px;
+            }
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    & > div:last-child {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 1024px) {
+        width: 100%;
+        justify-content: center;
+        margin-top: 30px;
+      }
+      & > div {
+        width: 100%;
+        padding: 10px;
+        background-color: #100c03;
+        border-radius: 8px;
+        overflow: hidden;
+        @media (max-width: 1024px) {
+          max-width: 600px;
+        }
+        & > img {
+          border-radius: 8px;
+          object-fit: contain;
+          object-position: center;
+        }
+        & > div {
+          display: flex;
+          align-items: center;
+          img {
+            width: 47px;
+            height: 47px;
+            border-radius: 50%;
+            margin-right: 8px;
+            @media (max-width: 596px) {
+              width: 35px;
+              height: 35px;
+            }
+          }
+          & > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h6 {
+              font-family: 'Poppins';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 22px;
+              letter-spacing: 0.5px;
+              color: #e67a00;
+              text-align: left;
+            }
+            p {
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 19px;
+              color: #d0d0dd;
+              text-align: left;
+            }
+            @media (max-width: 596px) {
+              h6 {
+                font-size: 12px;
+              }
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

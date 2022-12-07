@@ -1,0 +1,28 @@
+.bidBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 110px;
+  min-height: 27px;
+  background: linear-gradient(89.83deg, #ce7402 15.36%, #d7540c 49.92%);
+  border-radius: 8px;
+  z-index: 5;
+  transition: transform 0.3s;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(180deg, #1f1603 50%, #010101 172.62%);
+    left: 1px;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    z-index: -1;
+    border-radius: 8px;
+  }
+  &.sizeMd {
+    width: 156px;
+    height: 42px;
+  }
+}

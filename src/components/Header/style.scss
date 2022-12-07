@@ -1,0 +1,224 @@
+.sample {
+  color: red;
+}
+
+.navbar-explore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px 33px 33px 51px;
+  position: relative;
+  -webkit-transition: height 0.5s ease;
+  transition: all 0.5s ease;
+  @media (max-width: 1024px) {
+    padding: 23px 10px;
+  }
+  .logo {
+    cursor: pointer;
+    height: auto;
+    transition: width 0.5s ease;
+    width: 200px;
+    @media (max-width: 990px) {
+      display: none;
+      width: auto;
+    }
+  }
+  .minilogo {
+    cursor: pointer;
+    height: auto;
+    display: none;
+    transition: width 0.5s ease;
+    @media (max-width: 990px) {
+      display: block;
+    }
+    @media (max-width: 450px) {
+      width: 50px;
+    }
+  }
+  .searchbar {
+    display: flex;
+    align-items: center;
+    background: #1f1603;
+    border-radius: 100px;
+    padding: 16px 24px;
+    width: 100%;
+    margin: 0 20px;
+    position: relative;
+    z-index: 10000;
+    @media (max-width: 990px) {
+      padding: 8px 12px;
+    }
+    input {
+      padding-left: 10px;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: white;
+      width: 100%;
+      line-height: 100%;
+    }
+  }
+  .user-info {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 100;
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      @media (max-width: 990px) {
+        display: none;
+      }
+      & > div {
+        h3 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          color: #e8eaed;
+          white-space: nowrap;
+        }
+        p {
+          padding: 0;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: #d1d5db;
+        }
+      }
+      img {
+        width: 14px;
+        margin-left: 10px;
+        transition: 0.2s all;
+        &.rotate {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    &-dropdown {
+      position: absolute;
+      top: 115%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background: #1f1603;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: #e8eaed;
+      white-space: nowrap;
+      button {
+        display: flex;
+        align-items: center;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #e8eaed;
+        white-space: nowrap;
+        svg {
+          margin-left: 10px;
+        }
+      }
+
+      @media (max-width: 990px) {
+        left: auto;
+        right: 0px;
+        transform: translateX(0);
+        width: fit-content;
+      }
+    }
+  }
+  .wallet-btn {
+    min-width: 120px;
+    background: #1f1603;
+    border-radius: 100px;
+    height: 100%;
+    padding: 8px 12px;
+    color: white;
+    flex-shrink: 0;
+    white-space: nowrap;
+    cursor: pointer;
+    @media (max-width: 980px) {
+      padding: 5px 10px;
+    }
+  }
+  .header-avatar {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(135deg, #ed5356, #f9d649);
+    background-color: #f2f2f2;
+    background-size: cover;
+    background-position: center;
+    border-radius: 999px;
+    border: dot solid 1px;
+    border-color: #ffffff;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .userName {
+    box-sizing: border-box;
+    min-width: 0;
+    background: linear-gradient(
+      110.78deg,
+      #76e650 -1.13%,
+      #f9d649 15.22%,
+      #f08e35 32.09%,
+      #ec5157 48.96%,
+      #ff18bd 67.94%,
+      #1a4bff 85.34%,
+      #62d8f9 99.57%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .max150 {
+    max-width: 160px;
+    overflow-x: clip;
+    text-overflow: ellipsis;
+  }
+  .art {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+}
+
+.header-search-modal {
+  @media (max-width: 635px) {
+    position: fixed !important;
+    top: 110px !important;
+    width: auto !important;
+    right: 10px !important;
+    left: 10px !important;
+  }
+}

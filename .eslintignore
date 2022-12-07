@@ -1,0 +1,4 @@
+*.d.ts
+App.test.tsx
+serviceWorker.*
+.eslintrc.js

@@ -1,0 +1,21 @@
+.auctionWatch {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  display: flex;
+
+  p {
+    margin: 0 3px;
+    font-size: inherit;
+    line-height: inherit;
+    // span {
+    //   font-size: 16px;
+    //   font-weight: 100;
+    // }
+  }
+
+  // @media (max-width: 400px) {
+  //   font-size: 20px;
+  // }
+}

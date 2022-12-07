@@ -1,0 +1,75 @@
+.card-item {
+  margin: 0 auto;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #000000;
+  .card-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      object-fit: contain;
+      margin: auto;
+    }
+  }
+  .detail {
+    padding: 16px 16px 20px;
+    h5 {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #e6e6e6;
+      text-align: left;
+      margin-bottom: 12px;
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      div:first-child {
+        margin-right: 50px;
+      }
+      div {
+        h6 {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 157%;
+          color: #9797b4;
+          text-align: left;
+          white-space: nowrap;
+        }
+        p {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 157%;
+          text-align: left;
+          color: #e6e6e6;
+          white-space: nowrap;
+        }
+      }
+    }
+    button {
+      width: 100%;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #e67a00;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      margin-top: 16px;
+      border: 1.4px solid rgba(230, 122, 0, 0.42);
+      border-radius: 8px;
+    }
+  }
+}

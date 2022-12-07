@@ -1,0 +1,12 @@
+{
+  "env": "test",
+  "secretKey": "1094837263",
+  "log": {
+    "format": "dev",
+    "dir": "../logs"
+  },
+  "cors": {
+    "origin": true,
+    "credentials": true
+  }
+}

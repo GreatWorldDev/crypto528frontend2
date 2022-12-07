@@ -1,0 +1,45 @@
+.signin {
+  background: #130f01;
+  .wallet-connect {
+    display: flex;
+    max-width: min(1400px, 100% - 42px);
+    margin: 0 auto;
+    width: 100%;
+    flex-wrap: wrap;
+    & > div:first-child {
+      width: 50%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      @media (max-width: 1024px) {
+        width: 100%;
+        justify-content: center;
+        margin-top: 30px;
+      }
+      & > img {
+        max-width: 619px;
+        width: 100%;
+        padding: 10px;
+        background-color: #663500;
+        border-radius: 8px;
+        overflow: hidden;
+        @media (max-width: 1024px) {
+          max-width: 450px;
+        }
+        @media (max-width: 596px) {
+          padding: 15px;
+        }
+
+        border-radius: 8px;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+    & > div:last-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

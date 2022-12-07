@@ -1,0 +1,74 @@
+.member-card {
+  position: relative;
+  padding: 30px;
+  background: linear-gradient(180deg, #100901 26.56%, #98750b 100%);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  margin-top: 5rem;
+  flex: 0 0 29%;
+  &:first-child, &:nth-child(3) {
+    .profile-img {
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  .profile-img {
+    position: absolute;
+    top: -60px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+  }
+  .infoIcon {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    margin-bottom: 27px;
+  }
+  .member-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .member-name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    color: #f8951d;
+    text-align: left;
+  }
+
+  .member-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 10px;
+  }
+  .member-social-acct {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    a:not(:last-child) {
+      padding-right: 0.5rem;
+    }
+  }
+  button {
+    border-radius: 50%;
+    float: right;
+    background: inherit;
+    border: 1px solid #d0ddf5;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

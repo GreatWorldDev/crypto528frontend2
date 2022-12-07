@@ -1,0 +1,220 @@
+.banner-slider {
+  display: flex !important;
+  align-items: center;
+  width: 100%;
+  margin-top: 158px;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    margin-top: 97px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  & > div:first-child {
+    width: 50%;
+    padding-left: 115px;
+    padding-right: 65px;
+    @media (max-width: 1440px) {
+      padding-right: 50px;
+    }
+    @media (max-width: 1400px) {
+      padding-right: 0px;
+    }
+    @media (max-width: 1200px) {
+      width: 100%;
+      padding: 0;
+    }
+    h1 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 117%;
+      color: #ffffff;
+      text-align: left;
+      margin-bottom: 38px;
+      @media (max-width: 1200px) {
+        text-align: center;
+      }
+      @media (max-width: 1305px) {
+        font-size: 55px;
+      }
+      @media (max-width: 1219px) {
+        font-size: 45px;
+      }
+      @media (max-width: 1024px) {
+        font-size: 25px;
+        margin-bottom: 16px;
+      }
+      @media (max-width: 500px) {
+        text-align: left;
+      }
+    }
+    p {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 127%;
+      color: #f89a28;
+      text-align: left;
+      margin-bottom: 51px;
+      @media (max-width: 1305px) {
+        font-size: 25px;
+      }
+      @media (max-width: 1200px) {
+        text-align: center;
+      }
+      @media (max-width: 1024px) {
+        font-size: 16px;
+        margin-bottom: 28px;
+      }
+      @media (max-width: 500px) {
+        text-align: left;
+      }
+    }
+  }
+  .subscribe {
+    display: flex;
+    align-items: center;
+    height: 66px;
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid #f8951d;
+    border-radius: 6px;
+    overflow: hidden;
+    &.hide {
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+    &.show {
+      @media (min-width: 1201px) {
+        display: none;
+      }
+    }
+    @media (max-width: 1200px) {
+      margin: 0 auto;
+      height: 39px;
+      max-width: 293px;
+    }
+    input {
+      width: 65%;
+      height: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      padding-left: 10px;
+      letter-spacing: 1.07143px;
+      color: white;
+      &::placeholder {
+        color: gray;
+      }
+      @media (max-width: 1200px) {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 11px;
+        text-align: center;
+        letter-spacing: 1.07143px;
+        color: #ffffff;
+      }
+    }
+    button {
+      width: 35%;
+      background: #f8951d;
+      border: none;
+      outline: none;
+      height: 100%;
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
+      letter-spacing: 1.07143px;
+      color: #000000;
+      @media (max-width: 1200px) {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 1.07143px;
+        color: #000000;
+      }
+    }
+  }
+  & > div:last-child {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+    img {
+      max-height: 387px;
+      height: 100%;
+      @media (max-width: 1200px) {
+        max-width: 270px;
+        width: 100%;
+        max-height: none;
+        height: auto;
+        margin-bottom: 56px;
+      }
+    }
+  }
+}
+
+.slick-dots {
+  @media (min-width: 1200px) {
+    display: flex !important;
+    padding-left: 115px !important;
+    bottom: -50px !important;
+  }
+}
+
+.slick-dots li button:before {
+  font-size: 16px !important;
+  color: white !important;
+  opacity: 1 !important;
+  @media (max-width: 1200px) {
+    font-size: 7px !important;
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: #ff9900 !important;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  padding: 0 115px;
+  margin-top: 112px;
+  a {
+    margin-right: 20px;
+  }
+  @media (max-width: 1200px) {
+    padding: 0 20px;    
+    margin-top: 60px;
+    justify-content: center;
+    a {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+}

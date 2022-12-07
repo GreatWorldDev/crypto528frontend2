@@ -1,0 +1,17 @@
+{
+  "env": "development",
+  "secretKey": "1094837263",
+  "log": {
+    "format": "dev",
+    "dir": "../logs"
+  },
+  "cors": {
+    "origin": true,
+    "credentials": true
+  },
+  "ethTestNet": "wss://eth-goerli.g.alchemy.com/v2/vgHbC0ka5CkvUP40J47DTF2O1KrEcMMl",
+  "ethMainNet": "wss://eth-mainnet.g.alchemy.com/v2/GAG2amJoAjnroZO0qYTLJXRbyO1PZnrg",
+  "deployedAddress": "0xdd0Ad8b02868F7F79AF843a6f5095314EE445608",
+  "ethUrl": "goerli.etherscan.io/tx/",
+  "decimal": 1000000000000000000
+}

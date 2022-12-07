@@ -1,0 +1,75 @@
+.explore-container {
+  margin: 0 auto;
+  padding: 0 142px;
+  width: 100%;
+  @media (max-width: 1200px) {
+    padding: 0 20px;
+  }
+  h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 59px;
+    color: #e6e6e6;
+    text-align: left;
+    margin-bottom: 48px;
+    @media (max-width: 1024px) {
+      font-size: 22px;      
+    }
+    a {
+      color: #e67a00;
+      text-decoration: underline;
+    }
+  }
+  .nftCategory {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    button {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #acacc3;
+      padding: 20px 32px;
+      border: 1.4px solid #5a5a7c;
+      border-radius: 8px;
+      margin-right: 16px;
+      text-transform: capitalize;
+      &.active {
+        background: #e67a00;
+        color: white;
+      }
+    }
+  }
+  .nftCards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 500px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .explore-btn {
+    margin-top: 40px;
+    a {
+      border: 1.4px solid rgba(230, 122, 0, 0.42);
+      border-radius: 8px;
+      padding: 20px 32px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #e67a00;
+    }
+  }
+}

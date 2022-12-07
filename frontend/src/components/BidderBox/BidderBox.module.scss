@@ -1,0 +1,21 @@
+.bidderBox {
+  width: 100%;
+  height: auto;
+  padding: 20px 10px;
+  margin-left: 0;
+  flex-shrink: 0;
+  & > div {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  h4 {
+    color: #676767;
+  }
+  h5 {
+    color: #979797;
+  }
+}
+.avatar {
+  width: 60px;
+  height: 60px;
+}

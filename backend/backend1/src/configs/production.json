@@ -1,0 +1,17 @@
+{
+  "env": "production",
+  "secretKey": "1094837263",
+  "log": {
+    "format": "combined",
+    "dir": "../logs"
+  },
+  "cors": {
+    "origin": "your.domain.com",
+    "credentials": true
+  },
+  "ethTestNet": "wss://polygon-mumbai.g.alchemy.com/v2/eRNEWrNhnzzALLQ7tpSb6ZD5jmmZDJsH",
+  "ethMainNet": "wss://polygon-mainnet.g.alchemy.com/v2/9xzmqc-b30v1X5LiURSY8l1eMUsq5caB",
+  "deployedAddress": "0x9a41D8283e0b78b693C5E75BC74984eDEB7F2121",
+  "ethUrl": "polygonscan.com/tx/",
+  "decimal": 1000000000000000000
+}

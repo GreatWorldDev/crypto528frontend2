@@ -1,0 +1,38 @@
+version: '3'
+services:
+  postgres-nft:
+    image: postgres:12
+    container_name: postgres-nft
+    restart: unless-stopped
+    networks:
+      - nftnet
+    env_file:
+      - .env
+    ports:
+      - '5432:5432'
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+  nft:
+    container_name: nft
+    build:
+      dockerfile: Dockerfile
+      context: .
+    stdin_open: true
+    restart: unless-stopped
+    volumes:
+      - .:/var/nft
+      - /var/nft/node_modules
+    ports:
+      - 3000:3000
+    env_file: .env
+    networks:
+      - nftnet
+    links:
+      - postgres-nft
+
+networks:
+  nftnet:
+    driver: bridge
+volumes:
+  dbdata:
+    driver: local

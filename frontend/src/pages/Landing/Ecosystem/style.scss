@@ -1,0 +1,110 @@
+.ecosystem {
+  padding-top: 219px;
+  padding-left: 112px;
+  padding-right: 112px;
+  padding-bottom: 79px;
+  @media (max-width: 1200px) {
+    padding-top: 71px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 68px;
+  }
+  h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+    color: #ffffff;
+    text-align: left;
+    @media (max-width: 996px) {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+    }
+  }
+  p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 38px;
+    color: #f8951d;
+    margin-top: 39px;
+    text-align: justify;
+    margin-bottom: 61px;
+    @media (max-width: 996px) {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      color: #f8951d;
+    }
+  }
+  .blocks {    
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 32px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    @media (max-width: 1120px) {
+      padding: 0;      
+    }
+    div {
+      grid-column: auto / span 2;
+      background: #130e01;
+      border: 1px solid #f1ad3d;
+      box-shadow: 0px 26px 40px rgba(0, 0, 0, 0.12);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 24px;
+      @media (max-width: 996px) {
+        grid-column: auto / span 3;        
+      }
+      @media (max-width: 700px) {
+        grid-column: auto / span 6;        
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+        color: #dddcf9;
+        margin-top: 16px;
+        margin-bottom: 32px;
+        padding: 0;
+        text-align: left;
+      }
+      p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: #dddcf9;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+      }
+      &:last-child {
+        @media (max-width: 996px) {
+          grid-column: auto / span 6;        
+        }
+      }
+    }
+  }
+}

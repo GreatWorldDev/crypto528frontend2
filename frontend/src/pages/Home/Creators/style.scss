@@ -1,0 +1,55 @@
+.creators-container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+  @media (max-width: 1400px) {
+    padding-left: 20px;    
+    padding-right: 20px;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    h3 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 59px;
+      color: #e6e6e6;
+      @media (max-width: 1024px) {
+        font-size: 30px;      
+      }
+      a {
+        text-decoration-line: underline;
+        color: #f8951d;
+      }
+    }
+    .showmore-btn {
+      a {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #f8951d;
+        border: 1.4px solid rgba(248, 149, 29, 0.42);
+        border-radius: 8px;
+        padding: 20px 32px;
+      }
+    }
+  }
+  .creatorCards {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 1136px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 766px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
